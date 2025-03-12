@@ -1,0 +1,344 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+</head>
+<body class="bg-gray-900">
+  <!-- Navigation responsive -->
+  <nav>
+    <div class="bg-gray-900 flex justify-between h-[60px] items-center">
+        <div>
+          <h1 class="px-4 mx-2 md:mx-10 cursor-pointer text-xl md:text-2xl text-white font-bold"><span class="text-red-600">P</span>ortfolio</h1>
+        </div>
+        <!-- Menu desktop -->
+        <div class="hidden md:block">
+          <ul class="flex px-4 md:px-10">
+            <li class="mx-2 md:mx-6 cursor-pointer text-base md:text-lg text-white group relative">
+              <a href="#projet" class="relative inline">Projets</a>
+              <span class="absolute bottom-0 left-0 block h-[1.5px] w-0 bg-red-600 transition-all duration-600 group-hover:w-full"></span>
+            </li>
+            <li class="mx-2 md:mx-6 cursor-pointer text-base md:text-lg text-white group relative">
+              <a href="#competence" class="relative inline">Compétences</a>
+              <span class="absolute bottom-0 left-0 block h-[1.5px] w-0 bg-red-600 transition-all duration-600 group-hover:w-full"></span>
+            </li>
+            <li class="mx-2 md:mx-6 cursor-pointer text-base md:text-lg text-white group relative">
+              <a href="#veille" class="relative inline">Veille</a>
+              <span class="absolute bottom-0 left-0 block h-[1.5px] w-0 bg-red-600 transition-all duration-600 group-hover:w-full"></span>
+            </li>
+            <li class="mx-2 md:mx-6 cursor-pointer text-base md:text-lg text-white group relative">
+              <a href="https://www.linkedin.com/in/paul-miniou-297829352/" class="relative inline">Contact</a>
+              <span class="absolute bottom-0 left-0 block h-[1.5px] w-0 bg-red-600 transition-all duration-600 group-hover:w-full"></span>
+            </li>
+          </ul>
+        </div>
+        <!-- Menu mobile burger -->
+        <div class="block md:hidden pr-4 ">
+          <button id="menuButton" class="text-white focus:outline-none">
+            <svg class="w-6 h-6 cursor-pointer" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+            </svg>
+          </button>
+          <!-- Menu mobile dropdown -->
+          <div id="mobileMenu" class="hidden absolute right-0 mt-2 w-48 bg-gray-800 rounded-md shadow-lg py-2 z-50 cursor-pointer">
+            <a href="#projet" class="block px-4 py-2 text-white hover:bg-gray-700">Projets</a>
+            <a href="#competence" class="block px-4 py-2 text-white hover:bg-gray-700">Compétences</a>
+            <a href="#veille" class="block px-4 py-2 text-white hover:bg-gray-700">Expérience</a>
+            <a href="https://www.linkedin.com/in/paul-miniou-297829352/" class="block px-4 py-2 text-white hover:bg-gray-700">Contact</a>
+          </div>
+        </div>
+    </div>
+  </nav>
+
+
+  <!-- Hero section responsive -->
+  <section>
+    <div class="bg-gray-900 h-auto py-16 md:h-180 flex justify-center items-center">
+      <div class="w-full md:w-[80%] mx-auto flex items-center flex-col px-4">
+        <h1 class="text-3xl sm:text-5xl md:text-7xl text-white text-center">Développeur <span class="text-red-600 font-bold">Fullstack </span>spécialisé en Applications Web & Mobile</h1>
+        <p class="text-white text-base md:text-xl text-center py-6 md:py-10 w-full md:w-150">Je crée des expériences numériques sur mesure, alliant design et fonctionnalité pour donner vie à vos projets.</p>
+        <a class="text-white font-bold border py-2 px-5 rounded-4xl hover:border-red-600 transition-all duration-600" href="image/CV PAUL .pdf" download="">Telecharger Mon <span class="text-red-500">Cv</span></a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Projects section responsive -->
+  <section class="bg-gray-900 pb-10 md:pb-20 h-auto md:h-[900px] px-4 md:px-10" id="projet">
+    <h2 class="text-white text-3xl md:text-4xl font-bold mb-10 md:mb-20 ml-0 md:ml-5"> <span class="text-red-600">Mes</span> Projets</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 grid-rows-auto gap-8 md:gap-12 place-items-center">
+
+      <div class="relative w-full max-w-[400px] h-[300px] group overflow-hidden rounded-lg shadow-lg hover:scale-105 md:hover:scale-110 transition-all duration-600 border-2 border-white hover:border-red-600 border-opacity-50">
+        <img src="image/Acceuil-Idbarber.png" class="w-full h-full object-cover" />
+        <div class="absolute inset-0 bg-black/70 flex flex-col items-start justify-center text-white opacity-0 group-hover:opacity-100 transition-opacity duration-600 px-3">
+          <h3 class="text-xl font-bold mb-2">Projet WordPress Id Barber</h3>
+          <p class="text-l mt-2">J'ai créé le site ID Barber sous WordPress, présentant le salon, les prestations et tarifs. Il inclut une page de contact pour les rendez-vous et une interface moderne reflétant l'univers du barber.</p>
+          <a class="py-1 px-6 mt-5 text-white hover:text-red-600 transition duration-300 border border-red-600 rounded-4xl" href="https://www.wp-plq-sio2025.sio1-2lerebours.org/wordpress/">Voir</a>
+        </div>
+      </div>
+
+
+      <div class="relative w-full max-w-[400px] h-[300px] group overflow-hidden rounded-lg shadow-lg hover:scale-105 md:hover:scale-110 transition-all duration-600 border-2 border-white hover:border-red-600 border-opacity-50">
+        <img src="image/Acceuil-Rbarber.png" class="w-full h-full object-cover" />
+        <div class="absolute inset-0 bg-black/70 flex flex-col items-start justify-center text-white opacity-0 group-hover:opacity-100 transition-opacity duration-600 px-3">
+          <h3 class="text-xl font-bold mb-2">Projet Stage R.Barber</h3>
+          <p class="text-l mt-2">J'ai créé le site R.Barber en HTML/CSS, présentant le salon, les prestations et tarifs. Il inclut une page de contact pour prises de rendez-vous et une interface élégante mettant en valeur l'univers du barber.</p>
+          <a class="py-1 px-6 mt-5 text-white hover:text-red-600 transition duration-300 border border-red-600 rounded-4xl" href="https://github.com/paul2100/R.barber">Voir</a>
+        </div>
+      </div>
+
+
+      <div class="relative w-full max-w-[400px] h-[300px] group overflow-hidden rounded-lg shadow-lg hover:scale-105 md:hover:scale-110 transition-all duration-600 border-2 border-white hover:border-red-600 border-opacity-50">
+        <img src="image/Capture d’écran 2024-09-29 à 20.03.44.png" class="w-full h-full object-cover" />
+        <div class="absolute inset-0 bg-black/70 flex flex-col items-start justify-center text-white opacity-0 group-hover:opacity-100 transition-opacity duration-600 px-3">
+          <h3 class="text-xl font-bold mb-2">Projet Api Cuisine</h3>
+          <p class="text-l mt-2">J'ai créé un projet API Cuisine en HTML, CSS et JavaScript, permettant d'afficher des recettes aléatoires et de rechercher des plats par ingrédient. L'interface dynamique affiche les ingrédients et étapes de préparation de chaque recette.</p>
+          <a class="py-1 px-6 mt-5 text-white hover:text-red-600 transition duration-300 border border-red-600 rounded-4xl" href="https://github.com/paul2100/api-cuisine">Voir</a>
+        </div>
+      </div>
+
+
+      <div class="relative w-full max-w-[400px] h-[300px] group overflow-hidden rounded-lg shadow-lg hover:scale-105 md:hover:scale-110 transition-all duration-600 border-2 border-white hover:border-red-600 border-opacity-50">
+        <img src="image/Capture d’écran 2025-02-18 à 15.35.24.png" class="w-full h-full object-cover" />
+        <div class="absolute inset-0 bg-black/70 flex flex-col items-start justify-center text-white opacity-0 group-hover:opacity-100 transition-opacity duration-600 px-3">
+          <h3 class="text-xl font-bold mb-2">Projet Clash Of Clans Java</h3>
+          <p class="text-l mt-2">J'ai développé un jeu inspiré de Clash of Clans en JavaFX avec Scene Builder, intégrant une gestion d'équipe, l'amélioration des troupes et des sorts. L'interface interactive permet aux joueurs de renforcer leur armée et de planifier leurs stratégies.</p>
+          <a class="py-1 px-6 mt-5 text-white hover:text-red-600 transition duration-300 border border-red-600 rounded-4xl" href="https://github.com/paul2100/clashOfclan">Voir</a>
+        </div>
+      </div>
+
+
+      <div class="relative w-full max-w-[400px] h-[300px] group overflow-hidden rounded-lg shadow-lg hover:scale-105 md:hover:scale-110 transition-all duration-600 border-2 border-white hover:border-red-600 border-opacity-50">
+        <img src="image/img-Acceuil-projetAutoecole.png" class="w-full h-full object-cover" />
+        <div class="absolute inset-0 bg-black/70 flex flex-col items-start justify-center text-white opacity-0 group-hover:opacity-100 transition-opacity duration-600 px-3">
+          <h3 class="text-xl font-bold mb-2">Projet Autoécole</h3>
+          <p class="text-l mt-2">J'ai développé un projet d'auto-école en Java avec JavaFX, Scene Builder et une base de données SQL via phpMyAdmin. L'application permet aux clients, moniteurs et responsables de gérer inscriptions, plannings via une interface intuitive et sécurisée.</p>
+          <a class="py-1 px-6 mt-5 text-white hover:text-red-600 transition duration-300 border border-red-600 rounded-4xl" href="https://github.com/paul2100/Project-Auto-Ecole">Voir</a>
+        </div>
+      </div>
+
+      <div class="relative w-full max-w-[400px] h-[300px] group overflow-hidden rounded-lg shadow-lg hover:scale-105 md:hover:scale-110 transition-all duration-600 border-2 border-white hover:border-red-600 border-opacity-50">
+        <img src="image/img-Crenovation-Acceuil.png" class="w-full h-full object-cover" />
+        <div class="absolute inset-0 bg-black/70 flex flex-col items-start justify-center text-white opacity-0 group-hover:opacity-100 transition-opacity duration-600 px-3">
+          <h3 class="text-xl font-bold mb-2">Projet WordPress C.Renovation</h3>
+          <p class="text-l mt-2 ">J'ai créé le site C.Renovation sous WordPress pour un peintre en bâtiment. Il présente ses services, réalisations et permet aux clients de demander un devis via un formulaire de contact intuitif.</p>
+          <a class="py-1 px-6 mt-5 text-white hover:text-red-600 transition duration-300 border border-red-600 rounded-4xl" href="https://crenovation.wuaze.com">Voir</a>
+        </div>
+      </div>
+
+    </div>
+</section>
+
+
+<!-- Competences section responsive -->
+<section class="bg-gray-900 pt-10 pb-16" id="projet1">
+  <h2 class="text-white text-3xl md:text-4xl font-bold mb-10 md:mb-20 ml-0 md:ml-5 px-4 md:px-10"> <span class="text-red-600">Mes</span> Compétences</h2>
+
+  <div class="flex flex-col md:flex-row justify-around px-4 gap-10 md:gap-0">    
+    <div class="h-full w-full md:w-60 flex items-center justify-start flex-col">
+      <div>
+        <h3 class="text-xl font-bold mb-6 md:mb-10 text-white">Languages</h3>
+      </div>
+      <div class="h-18 w-full md:w-60 mb-6 md:mb-10 flex justify-start items-center border-2 border-white hover:border-red-600 rounded-xl cursor-pointer transition-all text-white hover:text-white duration-500">
+        <img src="image/logo/python (1).png" alt="" class="h-[20px] px-4">
+        <p class="px-2 font-bold">Python</p>
+      </div>
+      <div class="h-18 w-full md:w-60 mb-6 md:mb-10 flex justify-start items-center border-2 border-white hover:border-red-600 rounded-xl cursor-pointer transition-all text-white hover:text-white duration-500">
+        <img src="image/logo/java (1).png" alt="" class="h-[20px] px-4">
+        <p class="px-2 font-bold">Java</p>
+      </div>
+      <div class="h-18 w-full md:w-60 mb-6 md:mb-10 flex justify-start items-center border-2 border-white hover:border-red-600 rounded-xl cursor-pointer transition-all text-white hover:text-white duration-500">
+        <img src="image/logo/serveur-sql.png" alt="" class="h-[20px] px-4">
+        <p class="px-2 font-bold">Sql</p>
+      </div>
+      <div class="h-18 w-full md:w-60 mb-6 md:mb-10 flex justify-start items-center border-2 border-white hover:border-red-600 rounded-xl cursor-pointer transition-all text-white hover:text-white duration-500">
+        <img src="image/logo/html-5.png" alt="" class="h-[20px] px-4">
+        <p class="px-2 font-bold">HTML</p>
+      </div>
+      <div class="h-18 w-full md:w-60 mb-6 md:mb-10 flex justify-start items-center border-2 border-white hover:border-red-600 rounded-xl cursor-pointer transition-all text-white hover:text-white duration-500">
+        <img src="image/logo/css-3 (1).png" alt="" class="h-[20px] px-4">
+        <p class="px-2 font-bold">CSS</p>
+      </div>
+      <div class="h-18 w-full md:w-60 mb-6 md:mb-10 flex justify-start items-center border-2 border-white hover:border-red-600 rounded-xl cursor-pointer transition-all text-white hover:text-white duration-500">
+        <img src="image/logo/js.png" alt="" class="h-[20px] px-4">
+        <p class="px-2 font-bold">JavaScript</p>
+      </div>
+    </div>
+
+    <div class="h-full w-full md:w-60 flex items-center justify-start flex-col">
+      <div>
+        <h3 class="text-xl font-bold mb-6 md:mb-10 text-white">Frameworks & Libraries</h3>
+      </div>
+      <div class="h-18 w-full md:w-60 mb-6 md:mb-10 flex justify-start items-center border-2 border-white hover:border-red-600 rounded-xl cursor-pointer transition-all text-white hover:text-white duration-500">
+        <img src="image/logo/symfony.png" alt="" class="h-[20px] px-4">
+        <p class="px-2 font-bold">Symfony</p>
+      </div>
+      <div class="h-18 w-full md:w-60 mb-6 md:mb-10 flex justify-start items-center border-2 border-white hover:border-red-600 rounded-xl cursor-pointer transition-all text-white hover:text-white duration-500">
+        <img src="image/logo/Tailwind_CSS_Logo.svg.png" alt="" class="h-[20px] px-4">
+        <p class="px-2 font-bold">Tailwind CSS</p>
+      </div>
+      <div class="h-18 w-full md:w-60 mb-6 md:mb-10 flex justify-start items-center border-2 border-white hover:border-red-600 rounded-xl cursor-pointer transition-all text-white hover:text-white duration-500">
+        <img src="image/logo/React-icon.svg_.png" alt="" class="h-[20px] px-4">
+        <p class="px-2 font-bold">React</p>
+      </div>
+    </div>
+
+    <div class="h-full w-full md:w-60 flex items-center justify-start flex-col">
+      <div>
+        <h3 class="text-xl font-bold mb-6 md:mb-10 text-white">Tools & Platforms</h3>
+      </div>
+      <div class="h-18 w-full md:w-60 mb-6 md:mb-10 flex justify-start items-center border-2 border-white hover:border-red-600 rounded-xl cursor-pointer transition-all text-white hover:text-white duration-500">
+        <img src="image/logo/github (1).png" alt="" class="h-[20px] px-4">
+        <p class="px-2 font-bold">Github</p>
+      </div>
+      <div class="h-18 w-full md:w-60 mb-6 md:mb-10 flex justify-start items-center border-2 border-white hover:border-red-600 rounded-xl cursor-pointer transition-all text-white hover:text-white duration-500">
+        <img src="image/logo/formation-git.png" alt="" class="h-[20px] px-4">
+        <p class="px-2 font-bold">Git</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="w-full md:w-200 text-red-600 mx-auto my-10 md:my-20">
+
+<!-- Veille Technologique section responsive -->
+<section class="h-full bg-gray-900 px-4">
+  <div class="flex justify-center w-full">
+    <h2 class="text-[45px] md:text-9xl text-red-600 font-bold "> <span class="text-white">Veille Technologique |</span> <br>
+      Web3</h2>
+  </div>
+
+  <div class="w-full md:w-[50%] md:ml-30 mt-10 md:mt-30">
+    <h3 class="text-2xl md:text-3xl text-white tracking-wide">
+      <span class="text-red-600">Qu'est-ce</span> que le web 3 ?
+    </h3>
+    <p class="py-6 md:py-10 text-white text-base md:text-xl leading-relaxed md:leading-[40px]">
+      Le Web3 est une évolution d'Internet qui repose sur la blockchain et des technologies décentralisées. Contrairement au Web2 (Internet actuel dominé par des plateformes centralisées comme Google, Facebook, etc.), 
+      le Web3 vise à donner plus de contrôle aux utilisateurs sur leurs données et leurs interactions en ligne.
+    </p>
+  </div>
+
+  <div class="flex justify-center md:justify-end mx-0 md:mx-30 mt-6 md:mt-10">
+    <img src="image/veille/web_1_2_3.jpeg" alt="" class="h-auto w-full max-w-[700px] md:h-[400px] md:w-[700px] border rounded-lg border-red-600 
+    shadow-[0_0_2px_#fff,inset_0_0_2px_#fff,0_0_5px_#f00,0_0_15px_#f00,0_0_30px_#f00]">
+  </div>
+
+  <div class="my-10 md:my-20 w-full md:w-[80%] flex justify-center mx-auto flex-col">
+    <h2 class="py-10 md:py-20 text-2xl md:text-3xl text-center text-white font-bold">Mes ressources <span class="text-red-600 font-bold">Web3</span></h2>
+    <div class="flex flex-col md:flex-row w-full md:w-[90%] mx-auto justify-center">
+    <div class="w-full flex border border-white">
+      <ul class="w-full">
+        <h3 class="text-white text-center p-4 md:p-5 border border-white font-bold bg-red-600/80">Outil / Technologie</h3>
+        <li class="text-white py-3 md:py-4 px-4 md:px-5 border border-white">Google Alerts</li>
+        <li class="text-white py-3 md:py-4 px-4 md:px-5 border border-white">Twitter (X)</li>
+        <li class="text-white py-3 md:py-4 px-4 md:px-5 border border-white">CoinMarketCap</li>
+        <li class="text-white py-3 md:py-4 px-4 md:px-5 border border-white">Cointribune</li>
+      </ul>
+    </div>
+    <div class="w-full flex border border-white">
+      <ul class="w-full">
+        <h3 class="text-white text-center p-4 md:p-5 border border-white font-bold bg-red-600/80">Utilisation</h3>
+        <li class="text-white py-3 md:py-4 px-4 md:px-5 border border-white">Alertes sur les tendances et articles Web3</li>
+        <li class="text-white py-3 md:py-4 px-4 md:px-5 border border-white">Suivi des influenceurs et projets Web3</li>
+        <li class="text-white py-3 md:py-4 px-4 md:px-5 border border-white">Suivi des cryptomonnaies et projets blockchain</li>
+        <li class="text-white py-3 md:py-4 px-4 md:px-5 border border-white">Site d'actualité spécialisé dans le Web3</li>
+      </ul>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- Sources section responsive -->
+<section class="h-full px-4">
+  <div class="py-6 md:px-30 md:py-10">
+    <h2 class="text-2xl md:text-3xl font-bold text-white"> 
+      <span class="text-red-600">Mes</span> sources
+    </h2>
+  </div>
+
+  <div class="w-full md:w-[83%] mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-12 pb-10">
+    <div class="border-2 border-white h-auto md:h-80 flex flex-col justify-between px-4 py-4 md:py-0 bg-black rounded-lg shadow-[0_0_10px_#ff0000] hover:scale-105 md:hover:scale-110 transition-all duration-600 scale-125">
+      <h3 class="py-2 md:py-4 text-xl text-white font-bold">Donald Trump officialise la création d'une réserve stratégique en Bitcoin</h3>
+      <p class="py-2 text-gray-300">Donald Trump annonce la création d'une réserve stratégique américaine en Bitcoin</p>
+      <a href="https://www.journaldunet.com/web3/crypto/1539875-bitcoin-donald-trump-officialise-la-creation-d-une-reserve-strategique-americaine/" class="mt-auto text-white hover:text-red-600 transition duration-500 border border-red-600 rounded-4xl w-20 my-3 md:my-5 py-2 text-center ">Voir</a>
+    </div>
+    <div class="border-2 border-white h-auto md:h-80 flex flex-col justify-between px-4 py-4 md:py-0 bg-black rounded-lg shadow-[0_0_10px_#ff0000] hover:scale-105 md:hover:scale-110 transition-all duration-600 ">
+      <h3 class="py-2 md:py-4 text-xl text-white font-bold">Portefeuille Web3 lève 10,8 millions de dollars</h3>
+      <p class="py-2 text-gray-300">Un portefeuille crypto Web3 multi-chaînes attire 10,8 millions de dollars lors de son ICO.</p>
+      <a href="https://cryptonews.com/fr/news/sommet-historique-crypto-maison-blanche-portefeuille-web3-annonce-une-nouvelle-ere/" class="mt-auto text-white hover:text-red-600 transition duration-500 border border-red-600 rounded-4xl w-20 my-3 md:my-5 py-2 text-center ">Voir</a>
+    </div>
+    <div class="border-2 border-white h-auto md:h-80 flex flex-col justify-between px-4 py-4 md:py-0 bg-black rounded-lg shadow-[0_0_10px_#ff0000] hover:scale-105 md:hover:scale-110 transition-all duration-600 ">
+      <h3 class="py-2 md:py-4 text-xl text-white font-bold">Animoca Brands pivote en 2024 vers le conseil</h3>
+      <p class="py-2 text-gray-300">Animoca Brands génère 110 millions de dollars en conseil, marquant un tournant dans ses activités Web3 traditionnelles.</p>
+      <a href="https://www.coindesk.com/fr/web3/2025/03/05/animoca-brands-advisory-overtook-web3-businesses-in-2024-as-the-yat-siu-led-firm-pivots" class="mt-auto text-white hover:text-red-600 transition duration-500 border border-red-600 rounded-4xl w-20 my-3 md:my-5 py-2 text-center ">Voir</a>
+    </div>
+    <div class="border-2 border-white h-auto md:h-80 flex flex-col justify-between px-4 py-4 md:py-0 bg-black rounded-lg shadow-[0_0_10px_#ff0000] hover:scale-105 md:hover:scale-110 transition-all duration-600 ">
+      <h3 class="py-2 md:py-4 text-xl text-white font-bold">Snoop Dogg abandonne Spotify pour la plateforme Web3 Tune.fm"</h3>
+      <p class="py-2 text-gray-300">Snoop Dogg devient l'ambassadeur de la plateforme de streaming Web3 Tune.fm, lançant son nouveau single Spaceship Party sur cette nouvelle plateforme décentralisée.</p>
+      <a href="https://www.zimbalam.fr/snoop-dogg-dit-quil-abandonne-spotify-pour-web3-plateforme-tune-fm/" class="mt-auto text-white hover:text-red-600 transition duration-500 border border-red-600 rounded-4xl w-20 my-3 md:my-5 py-2 text-center ">Voir</a>
+    </div>
+    <div class="border-2 border-white h-auto md:h-80 flex flex-col justify-between px-4 py-4 md:py-0 bg-black rounded-lg shadow-[0_0_10px_#ff0000] hover:scale-105 md:hover:scale-110 transition-all duration-600 ">
+      <h3 class="py-2 md:py-4 text-xl text-white font-bold">Incidents de sécurité Web3 entraînent des pertes majeures en février 2025</h3>
+      <p class="py-2 text-gray-300">En février 2025, les incidents de sécurité Web3 ont provoqué des pertes significatives, avec 7 442 victimes de phishing.</p>
+      <a href="https://www.binance.com/fr/square/post/03-03-2025-web3-security-incidents-in-february-2025-result-in-significant-losses-21046697446466" class="mt-auto text-white hover:text-red-600 transition duration-500 border border-red-600 rounded-4xl w-20 my-3 md:my-5 py-2 text-center ">Voir</a>
+    </div>
+    <div class="border-2 border-white h-auto md:h-80 flex flex-col justify-between px-4 py-4 md:py-0 bg-black rounded-lg shadow-[0_0_10px_#ff0000] hover:scale-105 md:hover:scale-110 transition-all duration-600 ">
+      <h3 class="py-2 md:py-4 text-xl text-white font-bold">Base promet d'être deux fois plus rapide que Solana avec cette mise à jour</h3>
+      <p class="py-2 text-gray-300">La mise à jour de Base permet des applications Web3 plus rapides et flexibles, offrant ainsi une meilleure performance et des coûts réduits.</p>
+      <a href="https://cryptoast.fr/base-promet-2-fois-plus-rapide-solana-avec-mise-a-jour/" class="mt-auto text-white hover:text-red-600 transition duration-500 border border-red-600 rounded-4xl w-20 my-3 md:my-5 py-2 text-center ">Voir</a>
+    </div>
+    <div class="border-2 border-white h-auto md:h-80 flex flex-col justify-between px-4 py-4 md:py-0 bg-black rounded-lg shadow-[0_0_10px_#ff0000] hover:scale-105 md:hover:scale-110 transition-all duration-600 ">
+      <h3 class="py-2 md:py-4 text-xl text-white font-bold">Gagnants Hackathon Web3 : IA et NFT Révolutionnent Tout</h3>
+      <p class="py-2 text-gray-300">Découvrez les projets Web3 innovants, mêlant IA, jeux, paiements et NFT, qui redéfinissent l'avenir de la blockchain.</p>
+      <a href="https://viralmag.fr/gagnants-hackathon-web3-ia-et-nft-revolutionnent-tout/" class="mt-auto text-white hover:text-red-600 transition duration-500 border border-red-600 rounded-4xl w-20 my-3 md:my-5 py-2 text-center ">Voir</a>
+    </div>
+    <div class="border-2 border-white h-auto md:h-80 flex flex-col justify-between px-4 py-4 md:py-0 bg-black rounded-lg shadow-[0_0_10px_#ff0000] hover:scale-105 md:hover:scale-110 transition-all duration-600 ">
+      <h3 class="py-2 md:py-4 text-xl text-white font-bold">Cannes : On se devait d'être une destination crypto-friendly</h3>
+      <p class="py-2 text-gray-300">Le Web3 comme levier pour l'attractivité touristique à Cannes, avec l'intégration du Palais des Festivals et des commerçants locaux.</p>
+      <a href="https://www.tom.travel/2025/02/26/cannes-on-se-devait-detre-une-destination-crypto-friendly/" class="mt-auto text-white hover:text-red-600 transition duration-500 border border-red-600 rounded-4xl w-20 my-3 md:my-5 py-2 text-center ">Voir</a>
+    </div>
+    <div class="border-2 border-white h-auto md:h-80 flex flex-col justify-between px-4 py-4 md:py-0 bg-black rounded-lg shadow-[0_0_10px_#ff0000] hover:scale-105 md:hover:scale-110 transition-all duration-600 ">
+      <h3 class="py-2 md:py-4 text-xl text-white font-bold">5 nouvelles tendances en matière d'IA générative auxquelles le Web3 doit se préparer</h3>
+      <p class="py-2 text-gray-300">Cet article explore les tendances de l'IA générative en 2025 et comment le Web3 peut tirer parti de cette évolution technologique pour accélérer sa croissance.</p>
+      <a href="https://www.coindesk.com/fr/opinion/2025/02/25/5-new-trends-in-generative-ai-that-web3-needs-to-be-ready-for" class="mt-auto text-white hover:text-red-600 transition duration-500 border border-red-600 rounded-4xl w-20 my-3 md:my-5 py-2 text-center ">Voir</a>
+    </div>
+    <div class="border-2 border-white h-auto md:h-80 flex flex-col justify-between px-4 py-4 md:py-0 bg-black rounded-lg shadow-[0_0_10px_#ff0000] hover:scale-105 md:hover:scale-110 transition-all duration-600 ">
+      <h3 class="py-2 md:py-4 text-xl text-white font-bold">Le hack de ByBit renforce le besoin de miser sur ce Web3 wallet</h3>
+      <p class="py-2 text-gray-300">L'attaque de ByBit met en lumière la nécessité des portefeuilles Web3 auto-dépositaires pour plus de sécurité face aux échanges centralisés.</p>
+      <a href="https://cryptonews.com/fr/news/le-hack-de-bybit-renforce-la-necessite-dadopter-ce-portefeuille-auto-depositaire/" class="mt-auto text-white hover:text-red-600 transition duration-500 border border-red-600 rounded-4xl w-20 my-3 md:my-5 py-2 text-center ">Voir</a>
+    </div>
+    <div class="border-2 border-white h-auto md:h-80 flex flex-col justify-between px-4 py-4 md:py-0 bg-black rounded-lg shadow-[0_0_10px_#ff0000] hover:scale-105 md:hover:scale-110 transition-all duration-600 ">
+      <h3 class="py-2 md:py-4 text-xl text-white font-bold">Crypto Expo Europe : Le futur du Web3 est à Bucarest</h3>
+      <p class="py-2 text-gray-300">La Crypto Expo Europe à Bucarest se positionne comme un événement majeur pour explorer les nouvelles frontières de l'innovation et de l'expertise Web3, rassemblant les leaders de l'industrie.</p>
+      <a href="https://cryptonaute.fr/crypto-expo-europe-le-futur-du-web3-est-a-bucarest/" class="mt-auto text-white hover:text-red-600 transition duration-500 border border-red-600 rounded-4xl w-20 my-3 md:my-5 py-2 text-center ">Voir</a>
+    </div>
+    <div class="border-2 border-white h-auto md:h-80 flex flex-col justify-between px-4 py-4 md:py-0 bg-black rounded-lg shadow-[0_0_10px_#ff0000] hover:scale-105 md:hover:scale-110 transition-all duration-600 ">
+      <h3 class="py-2 md:py-4 text-xl text-white font-bold">CZ soutient les portefeuilles Web3, Best Wallet lève 10,3M$</h3>
+      <p class="py-2 text-gray-300">CZ soutient les portefeuilles Web3, et Best Wallet lève 10,3 millions de dollars en prévente.</p>
+      <a href="https://cryptonews.com/fr/news/cz-vote-portefeuilles-best-wallet-recolte-10-3-m-prevente/" class="mt-auto text-white hover:text-red-600 transition duration-500 border border-red-600 rounded-4xl w-20 my-3 md:my-5 py-2 text-center ">Voir</a>
+    </div>
+
+  </div>
+</section>
+
+<!-- JavaScript for mobile menu toggle -->
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const menuButton = document.getElementById('menuButton');
+    const mobileMenu = document.getElementById('mobileMenu');
+    
+    menuButton.addEventListener('click', function() {
+      mobileMenu.classList.toggle('hidden');
+    });
+    
+    // Close menu when clicking outside
+    document.addEventListener('click', function(event) {
+      if (!menuButton.contains(event.target) && !mobileMenu.contains(event.target)) {
+        mobileMenu.classList.add('hidden');
+      }
+    });
+  });
+</script>
+</body>
+</html>
